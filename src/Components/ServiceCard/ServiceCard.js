@@ -1,7 +1,6 @@
 import { faCopy, faPencilRuler, faToolbox, faTools } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Slide } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 
 
@@ -18,13 +17,11 @@ const ServiceCard = () => {
             {
                 data.map((v, i) => {
                     return <div className="col-12 col-sm-6 col-lg-3 mt-4">
-                        <Slide direction={'up'} delay={i * 300}>
-                            <Link to="/" className="d-block border p-5 text-center s-card">
-                                <FontAwesomeIcon icon={v.icon} className="display-4" />
-                                <h3 className="my-4">{v.name}</h3>
-                                <p className="m-0">{v.text}</p>
-                            </Link>
-                        </Slide>
+                        <Link to="/" className="d-block border p-5 text-center s-card">
+                            <FontAwesomeIcon icon={v.icon} className="display-4" />
+                            <h3 className="my-4">{v.name}</h3>
+                            <p className="m-0">{v.text}</p>
+                        </Link>
                     </div>
                 })
             }
