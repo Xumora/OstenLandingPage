@@ -1,0 +1,39 @@
+.pageName{
+    background-image: url(../../Images/about.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.pageName::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(9, 21, 45, 0.7) 0%, rgba(9, 21, 45, 0.25) 35%, rgba(0, 212, 255, 0) 100%);
+}
+.pageName .container .col-12{z-index: 1 !important;}
+.pageName h1{text-shadow: rgb(0 0 0) 5px 5px 5px;}
+.btn:focus{box-shadow: none !important;}
+.sectionTitle{
+    color: #112044;
+    display: inline-block;
+}
+.sectionTitle::after{
+    content: '';
+    display: block;
+    width: 120%;
+    height: 3px;
+    background-color: #112044;
+    margin-top: 1rem;
+    transform: translateX(-10%);
+}
+#main_sectionThree .sectionTitle::after, #main_sectionSix .sectionTitle::after{background-color: white;}
+.swiper-container .swiper-scrollbar .swiper-scrollbar-drag {
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+.s-card{
+    height: 316px !important;
+}

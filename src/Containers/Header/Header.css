@@ -1,0 +1,18 @@
+.logo{width: 100px;}
+header ul{
+    position: fixed;
+    right: 0;
+    top: 65px;
+    height: 100vh;
+    transition: 0.5s;
+    list-style: none;
+}
+.toLeft{
+    transition: 0.5s;
+    transform: translateX(230px);
+}
+header ul .h-link{
+    text-decoration: none;
+    color: #112044;
+}
+header ul .h-link:hover{color: #ffc107;}

@@ -1,0 +1,13 @@
+.lift{
+    border-radius: 20px;
+    overflow: hidden;
+    height: 425px !important;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4) !important;
+    position: relative;
+}
+.lift h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

@@ -1,0 +1,44 @@
+#main_sectionOne, #main_sectionThree, #main_sectionSix{
+    background-image: url(../../Images/home.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+#main_sectionThree{background-image: url(../../Images/results.jpg) !important}
+#main_sectionSix{background-image: url(../../Images/review.jpg) !important}
+#main_sectionOne::before, #main_sectionThree::before, #main_sectionSix::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(9, 21, 45, 0.7) 0%, rgba(9, 21, 45, 0.25) 35%, rgba(0, 212, 255, 0) 100%);
+}
+#main_sectionThree::before, #main_sectionSix::before{background: rgb(9, 21, 45) !important; opacity: 0.5;}
+#main_sectionOne .container .col-12, #main_sectionThree .container .col-10, #main_sectionSix .container .col-12{z-index: 1 !important;}
+
+p, h1, h2, h3, h4, h5, h6{word-break: break-all;}
+
+#main_sectionTwo .s-card{
+    color: #112044;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: rgb(17 32 69) 0px 6px 36px -20px;
+    transition: 0.5s;
+}
+#main_sectionTwo .s-card:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.benefit{
+    cursor: pointer;
+    color: #112044;
+    transition: 0.5s;
+}
+.benefit:hover{transform: translateY(-30px);transition: 0.5s;}
+.benefit .icon-box{
+    width: 100px;
+    height: 100px;
+}
